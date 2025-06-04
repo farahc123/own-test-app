@@ -11,4 +11,3 @@ node_modules
 .vagrant
 package-lock.json
 *.log
-logo.png
