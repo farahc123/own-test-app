@@ -7,7 +7,7 @@ var should = chai.should();
 chai.use(chaiHttp);
 
 describe('Homepage', function() {
-  it('should display the homepage at / GET', function(done) {
+  it('displays the homepage at / GET', function(done) {
     chai.request(server)
       .get('/')
       .end(function(err, res){
@@ -15,7 +15,7 @@ describe('Homepage', function() {
         done();
       });
   });
-  it('should contain the word DevOps at / GET', function(done) {
+  it('contains the word DevOps at / GET', function(done) {
     chai.request(server)
       .get('/')
       .end(function(err, res){
